@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>String Compressor</title>
+</head>
+<body>
+  <h1>String Compressor</h1>
+  <form action="/compress" method="POST">
+    <textarea name="inputString" rows="5" cols="40" placeholder="Enter text to compress"></textarea><br><br>
+    <button type="submit">Compress</button>
+  </form>
+
+  <% if (compressed) { %>
+    <h2>Compressed String:</h2>
+    <textarea rows="4" cols="60" readonly><%= compressed %></textarea>
+  <% } %>
+</body>
+</html>
